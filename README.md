@@ -1,6 +1,6 @@
 # ekhi-utils
 
-This repository holds some examples of how to work with the JSON files downloaded from EKHI. Those examples can be found in the `notebooks` folder.
+This repository holds some examples of how to work with the JSON files downloaded from [EKHI](https://thermomat.ehu.eus/ekhi). Those examples can be found in the `notebooks` folder.
 
 ## The JSON Schema
 
