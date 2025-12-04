@@ -1,33 +1,56 @@
 {
     "publication_info": {
-        "doi": "10.1063/1.1729840",
+        "year": "1963",
+        "volume": "34",
+        "title": "{Total emittance of rhenium}",
         "pages": "2922-None",
         "number": "9",
-        "volume": "34",
-        "year": "1963",
         "journal": "Journal of Applied Physics",
-        "title": "{Total emittance of rhenium}",
-        "author": "Gordon B. Gaines and Chester T. Sims",
+        "doi": "10.1063/1.1729840",
+        "author": "Gaines, Gordon B. and Sims, Chester T.",
         "ENTRYTYPE": "article",
         "ID": "Gaines1963TotalRhenium",
         "abstract": "No abstract provided"
     },
-    "datasets": [
+    "id": "10.1063/1.1729840:1",
+    "material": "TUNGSTEN",
+    "property": [
+        "emittance",
+        "hemispherical total emittance"
+    ],
+    "category": [
+        "Metallic elements and alloys",
+        "Elements"
+    ],
+    "reported_measurements": [
         {
-            "dataset_id": "10.1063/1.1729840:dataset-1",
-            "material": "TUNGSTEN",
-            "property": [
-                "emittance",
-                "hemispherical total emittance"
-            ],
-            "category": [
-                "Metallic elements and alloys",
-                "Elements"
-            ],
-            "reported_data": [
+            "id": "dad0c037-ee11-4ca1-9c75-853e9dc22d18",
+            "description": "HEMISPHERICAL TOTAL EMITTANCE of TUNGSTEN",
+            "changelog": [
                 {
-                    "id": "dad0c037-ee11-4ca1-9c75-853e9dc22d18",
-                    "description": "HEMISPHERICAL TOTAL EMITTANCE of TUNGSTEN",
+                    "timestamp": "2025-07-06T09:38:06.262785",
+                    "description": "Initial generation of the fer data.",
+                    "user": ""
+                }
+            ],
+            "correct": true,
+            "state": [
+                {
+                    "name": "Temperature Range, K",
+                    "description": "300-3540",
+                    "quantity_value": {}
+                },
+                {
+                    "name": "Composition (weight percent), Specifications and Remarks",
+                    "description": "Tungsten filaments aged 24 hrs at 2400 K; measured in vacuum; smoothed values.",
+                    "quantity_value": {}
+                }
+            ],
+            "results": [
+                {
+                    "id": "8b76cc24-b643-4a6f-925c-2e88989981e3",
+                    "name": "HEMISPHERICAL TOTAL EMITTANCE of TUNGSTEN",
+                    "description": "",
                     "changelog": [
                         {
                             "timestamp": "2025-07-06T09:38:06.262785",
@@ -35,138 +58,111 @@
                             "user": ""
                         }
                     ],
-                    "correct": true,
-                    "state": [
-                        {
-                            "name": "Temperature Range, K",
-                            "description": "300-3540",
-                            "quantity_value": {}
-                        },
-                        {
-                            "name": "Composition (weight percent), Specifications and Remarks",
-                            "description": "Tungsten filaments aged 24 hrs at 2400 K; measured in vacuum; smoothed values.",
-                            "quantity_value": {}
-                        }
-                    ],
-                    "results": [
-                        {
-                            "id": "8b76cc24-b643-4a6f-925c-2e88989981e3",
-                            "name": "HEMISPHERICAL TOTAL EMITTANCE of TUNGSTEN",
-                            "description": "",
-                            "changelog": [
-                                {
-                                    "timestamp": "2025-07-06T09:38:06.262785",
-                                    "description": "Initial generation of the fer data.",
-                                    "user": ""
-                                }
-                            ],
-                            "quantities": [
-                                "Temperature",
-                                "Emittance"
-                            ],
-                            "symbols": [
-                                "𝑇",
-                                "𝜀"
-                            ],
-                            "units": [
-                                "K",
-                                ""
-                            ],
-                            "values": [
-                                [
-                                    300.0,
-                                    400.0,
-                                    500.0,
-                                    600.0,
-                                    700.0,
-                                    800.0,
-                                    900.0,
-                                    1000.0,
-                                    1100.0,
-                                    1200.0,
-                                    1300.0,
-                                    1400.0,
-                                    1500.0,
-                                    1600.0,
-                                    1700.0,
-                                    1800.0,
-                                    1900.0,
-                                    2000.0,
-                                    2100.0,
-                                    2200.0,
-                                    2300.0,
-                                    2400.0,
-                                    2500.0,
-                                    2600.0,
-                                    2700.0,
-                                    2800.0,
-                                    2900.0,
-                                    3000.0,
-                                    3100.0,
-                                    3200.0,
-                                    3300.0,
-                                    3400.0,
-                                    3500.0,
-                                    3540.0
-                                ],
-                                [
-                                    0.0237,
-                                    0.033,
-                                    0.0421,
-                                    0.0514,
-                                    0.0626,
-                                    0.0755,
-                                    0.0904,
-                                    0.1069,
-                                    0.1247,
-                                    0.1435,
-                                    0.1625,
-                                    0.1813,
-                                    0.1995,
-                                    0.217,
-                                    0.2338,
-                                    0.2494,
-                                    0.2643,
-                                    0.2785,
-                                    0.292,
-                                    0.3046,
-                                    0.3174,
-                                    0.329,
-                                    0.3407,
-                                    0.3517,
-                                    0.3625,
-                                    0.3733,
-                                    0.3839,
-                                    0.3941,
-                                    0.4041,
-                                    0.4142,
-                                    0.4239,
-                                    0.4334,
-                                    0.4428,
-                                    0.4467
-                                ]
-                            ],
-                            "standard_uncertainties": [],
-                            "coverages": [],
-                            "probability_density_functions": [],
-                            "correlation_indices": []
-                        }
-                    ],
-                    "correlations": {},
-                    "measurands": [
+                    "quantities": [
+                        "Temperature",
                         "Emittance"
                     ],
-                    "source": {
-                        "id": "8c9f9550-6233-4f5f-912a-d27a9d0fce42",
-                        "name": "Digitalized data from 10.1103/PhysRev.7.302.",
-                        "description": "Data originally published at 10.1103/PhysRev.7.302. Tabulated data extracted from Y. S. Touloukian and D. P. DeWitt, *Thermal Radiative Properties: Metallic Elements and Alloys*, Thermophysical Properties of Matter - The TPRC Data Series, Volume 7, IFI/Plenum, New York, 1970; table 231, curve 27. Digital version served at EKHI (URL).",
-                        "model": "",
-                        "influence_quantities": [],
-                        "input_quantities": [],
-                        "correlations": {}
-                    }
+                    "symbols": [
+                        "𝑇",
+                        "𝜀"
+                    ],
+                    "units": [
+                        "K",
+                        ""
+                    ],
+                    "values": [
+                        [
+                            300.0,
+                            400.0,
+                            500.0,
+                            600.0,
+                            700.0,
+                            800.0,
+                            900.0,
+                            1000.0,
+                            1100.0,
+                            1200.0,
+                            1300.0,
+                            1400.0,
+                            1500.0,
+                            1600.0,
+                            1700.0,
+                            1800.0,
+                            1900.0,
+                            2000.0,
+                            2100.0,
+                            2200.0,
+                            2300.0,
+                            2400.0,
+                            2500.0,
+                            2600.0,
+                            2700.0,
+                            2800.0,
+                            2900.0,
+                            3000.0,
+                            3100.0,
+                            3200.0,
+                            3300.0,
+                            3400.0,
+                            3500.0,
+                            3540.0
+                        ],
+                        [
+                            0.0237,
+                            0.033,
+                            0.0421,
+                            0.0514,
+                            0.0626,
+                            0.0755,
+                            0.0904,
+                            0.1069,
+                            0.1247,
+                            0.1435,
+                            0.1625,
+                            0.1813,
+                            0.1995,
+                            0.217,
+                            0.2338,
+                            0.2494,
+                            0.2643,
+                            0.2785,
+                            0.292,
+                            0.3046,
+                            0.3174,
+                            0.329,
+                            0.3407,
+                            0.3517,
+                            0.3625,
+                            0.3733,
+                            0.3839,
+                            0.3941,
+                            0.4041,
+                            0.4142,
+                            0.4239,
+                            0.4334,
+                            0.4428,
+                            0.4467
+                        ]
+                    ],
+                    "standard_uncertainties": [],
+                    "coverages": [],
+                    "probability_density_functions": [],
+                    "correlation_indices": []
                 }
-            ]
+            ],
+            "correlations": {},
+            "measurands": [
+                "Emittance"
+            ],
+            "source": {
+                "id": "8c9f9550-6233-4f5f-912a-d27a9d0fce42",
+                "name": "Digitized data from 10.1103/PhysRev.7.302.",
+                "description": "Data originally published at 10.1103/PhysRev.7.302. Tabulated data extracted from Y. S. Touloukian and D. P. DeWitt, *Thermal Radiative Properties: Metallic Elements and Alloys*, Thermophysical Properties of Matter - The TPRC Data Series, Volume 7, IFI/Plenum, New York, 1970; table 231, curve 27. Digital version served at EKHI (URL).",
+                "model": "",
+                "influence_quantities": [],
+                "input_quantities": [],
+                "correlations": {}
+            }
         }
     ]
 }
