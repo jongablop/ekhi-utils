@@ -8,10 +8,14 @@ The JSON schema in `schemas/ekhi-dataset.json` defines the JSON structure for EK
 
 ### Structure
 
-- **publication_info** — bibliographic metadata
-- **datasets** — list of materials and associated reported data
+- **publication_info** - bibliographic metadata.
+- **id** - identifier of the data record.
+- **material** - string of the material name.
+- **property** - array of strings with properties and subproperties ordered hierarchically.
+- **category** - array of strings with categories and subcategories ordered hierarchically.
+- **reported_measurements** - array of the reported Measurements.
 
-Each object in `datasets[*].reported_data[*]` conforms to the
+Each object in `reported_measurements` conforms to the Measurement structure defined in the
 [FER schema](https://github.com/jongablop/fer/blob/main/fer-schema.json).
 
 ### Validation
@@ -20,4 +24,4 @@ To validate an EKHI JSON file:
 
 ```bash
 pip install jsonschema
-python -m jsonschema -i examples/tungsten.json ekhi-schema.json
+python -m jsonschema -i data/entry_example.json schemas/ekhi-schema.json
