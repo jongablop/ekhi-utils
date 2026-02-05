@@ -1,5 +1,7 @@
 # ekhi-utils
 
+[![DOI](https://zenodo.org/badge/1084874835.svg)](https://doi.org/10.5281/zenodo.18495689)
+
 This repository holds some examples of how to work with the JSON files downloaded from [EKHI](https://thermomat.ehu.eus/ekhi). Those examples can be found in the `notebooks` folder.
 
 ## The JSON Schema
