@@ -1,42 +1,93 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://raw.githubusercontent.com/jongablop/ekhi-utils/main/schemas/ekhi-schema.json",
-  "title": "EKHI dataset schema",
+  "title": "EKHI data record schema",
+  "description": "Schema describing the data structure used in the EKHI database, including publication metadata and reported measurements.",
   "type": "object",
   "properties": {
     "publication_info": {
       "type": "object",
+      "description": "Bibliographic information of the publication from which the data record was extracted.",
       "properties": {
-        "doi": { "type": "string" },
-        "pages": { "type": "string" },
-        "number": { "type": "string" },
-        "volume": { "type": "string" },
-        "year": { "type": "string" },
-        "journal": { "type": "string" },
-        "title": { "type": "string" },
-        "author": { "type": "string" },
-        "ENTRYTYPE": { "type": "string" },
-        "ID": { "type": "string" },
-        "abstract": { "type": "string" }
+        "doi": { 
+          "type": "string",
+          "description": "Digital Object Identifier of the publication."
+        },
+        "pages": { 
+          "type": "string",
+          "description": "Page range of the article in the journal."
+        },
+        "number": { 
+          "type": "string",
+          "description": "Issue number of the journal."
+        },
+        "volume": { 
+          "type": "string",
+          "description": "Volume number of the journal."
+        },
+        "year": { 
+          "type": "string",
+          "description": "Year of publication."
+        },
+        "journal": { 
+          "type": "string",
+          "description": "Name of the journal where the article was published."
+        },
+        "title": { 
+          "type": "string",
+          "description": "Title of the publication."
+        },
+        "author": { 
+          "type": "string",
+          "description": "Author(s) of the publication."
+        },
+        "ENTRYTYPE": { 
+          "type": "string",
+          "description": "BibTeX entry type (e.g., article, book, inproceedings)."
+        },
+        "ID": { 
+          "type": "string",
+          "description": "Unique BibTeX identifier of the entry."
+        },
+        "abstract": { 
+          "type": "string",
+          "description": "Abstract of the publication."
+        }
       },
       "required": ["doi", "title", "author", "ENTRYTYPE", "ID"]
     },
-    "id": { "type": "string" },
-    "material": { "type": "string" },
+    "id": { 
+      "type": "string",
+      "description": "Unique identifier of the data record within the EKHI database."
+    },
+    "material": { 
+      "type": "string",
+      "description": "Material of the data record."
+    },
     "property": {
-        "type": "array",
-        "items": { "type": "string" }
+      "type": "array",
+      "description": "Hierarchical list of the reported property, from the most general to the least.",
+      "items": { 
+        "type": "string",
+        "description": "Name of a reported physical property."
+      }
     },
     "category": {
-        "type": "array",
-        "items": { "type": "string" }
+      "type": "array",
+      "description": "Hierarchical list of the categories assigned to the material reported in the data record, from the most general to the least.",
+      "items": { 
+        "type": "string",
+        "description": "Category label."
+      }
     },
     "reported_measurements": {
-        "type": "array",
-        "items": {
-          "$ref": "https://raw.githubusercontent.com/jongablop/fer/main/fer-schema.json"
-        }
+      "type": "array",
+      "description": "List of measurement records extracted from the publication.",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/jongablop/fer/main/fer-schema.json",
+        "description": "A measurement entry conforming to the FER schema."
+      }
     }
   },
-  "required": ["publication_info", "dataset_id", "material", "property", "reported_data"]
+  "required": ["publication_info", "id", "material", "property", "reported_data"]
 }
