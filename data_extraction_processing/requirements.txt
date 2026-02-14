@@ -1,0 +1,7 @@
+PyPDF2
+pdfplumber
+pypdf 
+pymupdf
+pytesseract
+pillow
+ferpy
